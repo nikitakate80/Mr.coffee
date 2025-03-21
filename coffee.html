@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title -->
+    <title>Coffe shop</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="coffee.css">
+    <!-- js file  -->
+    <script src="coffe.js" defer></script>
+    <!-- inpot fontlink -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+    <!-- ===main======================== -->
+       <section id="main">
+          <!--=== header ==================-->
+          <header>
+            <!-- ===navigation=============== -->
+             <nav class="navigation">
+                <!-- ==menu btn=============== -->
+                 <input type="checkbox" id="menu-btn" class="menu-btn"/>
+                 <label for="menu-btn" class="menu-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                      </svg>
+                 </label>
+                 
+                 <!-- menu -->
+                  <div class="side-menu">
+                    <div class="menu-container">
+                       <strong>Main Links</strong>
+                       <!-- close button -->
+                        <label for="menu-btn" class="close-btn">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                          </svg>
+                        </label>
+                        <!-- menu list -->
+                        <ul class="menu">
+                          <ul class="menu">
+                            <li><a href="coffee.html">Home</a></li>
+                            <li><a href="#shop.html">Shop</a></li>
+                            <li><a href="#popular">Popular</a></li>
+                            <li><a href="#blog">News</a></li>
+                            <li><a href="#recent-product">Recent</a></li>
+                         </ul>
+                         
+                           
+
+                        </ul>
+
+                    </div>
+                  </div>
+
+
+                 <!-- logo -->
+                 <a href="#" class="logo">
+                    <img src="logo.png" alt="Logo"/>
+                </a>
+                <!-- nav btn -->
+                <div class="naw-butn">
+                    <!-- search -->
+                    <a href="javascript:void(0);" class="nav-search">
+                        <svg xmlns="http://www.w3.org/2000/svg"  class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                        </svg>
+                    </a>
+                    <!-- user  -->
+                     <a href="javascript:void(0);" class="nav-user">
+                        <svg xmlns="http://www.w3.org/2000/svg"   class="bi bi-person" viewBox="0 0 16 16">
+                            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                          </svg>
+                     </a>
+                     <!-- cart -->
+                     <a href="#" class="nav-cart">
+                        <svg xmlns="http://www.w3.org/2000/svg"  class="bi bi-cart3" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                          </svg>
+                          <span>0</span>
+                     </a>
+                </div>
+             </nav>
+
+          </header>
+        <!-- main contenet -->
+        <div class="main-content" >
+        <!-- text -->
+           <div class="main-content-text">
+            <strong>Coffee</strong>
+            <h1>Enjoy <br> Your Morning<br> Coffee</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, illum </p>
+            <span>$14.50</span>
+            <a href="#" >Add To Card</a>
+
+          </div>
+           <!-- img -->
+           <div class="main-content-img">
+              <img src="model.png" alt="model">
+           </div>
+
+        </div>
+        
+
+
+       </section>
+       <!-- search-bar ============-->
+       <div class="search-bar">
+         <!-- input==== -->
+          <form class="search-input">
+          <input type="text" name="search" placeholder="Search for Product "/>
+          <!-- cancle-btn -->
+           <a href="javascript:void(0);" class="search-cancel">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+               <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+             </svg>
+           </a>
+          </form>
+       </div>
+
+       <!-- login-sign-up========== -->
+        <div class="form">
+          <!-- login==== -->
+           <div class="login-form">
+             <!-- cancle-btn -->
+              <a href="javascript:void(0)" class="form-cancel">
+               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                  <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                </svg>
+              </a>
+              <!-- heading == -->
+               <strong>Log In</strong>
+               <!-- input -->
+                <form>
+                  <input type="email" name="email" placeholder="Example@gmail.com" required>
+                  <input type="password" name="password" placeholder="Password" required>
+                  <input type="submit" value="Log In">
+         
+                </form>
+                <!-- btn -->
+                 <div class="form-btns">
+                    <a href="#" class="forget">Forget Your Password?</a>
+                    <a href="javascript:void(0)" class="sign-up-btn">Create An Accout?</a>
+                 </div>
+           </div>
+
+            <!-- login==== -->
+            <div class="sign-up-form">
+              <!-- cancle-btn -->
+               <a href="javascript:void(0)" class="form-cancel">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                   <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                 </svg>
+               </a>
+               <!-- heading == -->
+                <strong>Sign Up</strong>
+                <!-- input -->
+                 <form>
+                   <input type="text" name="fullname" placeholder="Full Name " required/>
+                   <input type="email" name="email" placeholder="Example@gmail.com" required/>
+                   <input type="password" name="password" placeholder="Password" required/>
+                   <input type="submit" value="Sign up">
+          
+                 </form>
+                 <!-- btn -->
+                  <div class="form-btns">
+                     <!-- <a href="#" class="forget"></a> -->
+                     <a href="javascript:void(0)" class="already-accoutnt">Already have a Accout?</a>
+                  </div>
+            </div>
+
+        </div>
+    
+        <!-- popular ================-->
+        <section id="popular">
+             <!-- **heading** -->
+              <h2>Popular Coffee</h2>
+
+
+              <!-- container======= -->
+               <div class="popular-container">
+                  <!-- popular-container =====-->
+                   <div class="popular-product-container">
+                    <!-- box1 -->
+                     <div class="product-box">
+                        <!-- img ===-->
+                         <a href="#" class="product-box-img">
+                           <img src="p1.png" alt="product"/>
+                           <span>New</span>
+                         </a>
+                         <!-- text -->
+                          <div class="product-box-text">
+                            <a href="#" class="product-text-title">Coffee Beans</a>
+                            <span>20$ <del>40$</del></span>
+                            <a href="" class="product-card-btn">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-heart-fill" viewBox="0 0 16 16">
+                                <path d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
+                              </svg>
+                              Add To Card 
+                            </a>
+                          </div>
+                     </div>
+
+                     <!-- box2 -->
+                     <div class="product-box">
+                      <!-- img ===-->
+                       <a href="#" class="product-box-img">
+                         <img src="p2.png" alt="product"/>
+                         <span>New</span>
+                       </a>
+                       <!-- text -->
+                        <div class="product-box-text">
+                          <a href="#" class="product-text-title">Coffee Beans</a>
+                          <span>20$ <del>40$</del></span>
+                          <a href="" class="product-card-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-heart-fill" viewBox="0 0 16 16">
+                              <path d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
+                            </svg>
+                            Add To Card 
+                          </a>
+                        </div>
+                   </div>
+
+                   <!-- box3 -->
+                   <div class="product-box">
+                    <!-- img ===-->
+                     <a href="#" class="product-box-img">
+                       <img src="p3.png" alt="product"/>
+                       <span>New</span>
+                     </a>
+                     <!-- text -->
+                      <div class="product-box-text">
+                        <a href="#" class="product-text-title">Coffee Beans</a>
+                        <span>20$ <del>40$</del></span>
+                        <a href="" class="product-card-btn">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-heart-fill" viewBox="0 0 16 16">
+                            <path d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
+                          </svg>
+                          Add To Card 
+                        </a>
+                      </div>
+                 </div>
+
+
+                 <!-- box4 -->
+                 <div class="product-box">
+                  <!-- img ===-->
+                   <a href="#" class="product-box-img">
+                     <img src="p4.png" alt="product"/>
+                     <span>New</span>
+                   </a>
+                   <!-- text -->
+                    <div class="product-box-text">
+                      <a href="#" class="product-text-title">Coffee Beans</a>
+                      <span>20$ <del>40$</del></span>
+                      <a href="" class="product-card-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-heart-fill" viewBox="0 0 16 16">
+                          <path d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
+                        </svg>
+                        Add To Card 
+                      </a>
+                    </div>
+               </div>
+
+               <!-- box5 -->
+               <div class="product-box">
+                <!-- img ===-->
+                 <a href="#" class="product-box-img">
+                   <img src="p5.png" alt="product"/>
+                   <span>New</span>
+                 </a>
+                 <!-- text -->
+                  <div class="product-box-text">
+                    <a href="#" class="product-text-title">Coffee Beans</a>
+                    <span>20$ <del>40$</del></span>
+                    <a href="" class="product-card-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-heart-fill" viewBox="0 0 16 16">
+                        <path d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
+                      </svg>
+                      Add To Card 
+                    </a>
+                  </div>
+               </div>
+
+             <!-- box6 -->
+              <div class="product-box">
+                        <!-- img ===-->
+                         <a href="#" class="product-box-img">
+                           <img src="p6.png" alt="product"/>
+                           <span>New</span>
+                         </a>
+                         <!-- text -->
+                          <div class="product-box-text">
+                            <a href="#" class="product-text-title">Coffee Beans</a>
+                            <span>20$ <del>40$</del></span>
+                            <a href="" class="product-card-btn">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-heart-fill" viewBox="0 0 16 16">
+                                <path d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
+                              </svg>
+                              Add To Card 
+                            </a>
+                          </div>
+              </div>
+
+
+                   </div>
+                   <!-- **banner** -->
+                    <div class="popular-banner">
+                    <!-- text -->
+                     <div class="popular-banner-text">
+                        <h3>Coffee Beans Collection</h3>
+                        <a href="#">Shop Now</a>
+                     </div>
+                     <!-- img -->
+                     <div class="popular-banner-img">
+                        <img src="banner.png" alt="banner"/>
+
+                     </div>
+
+
+                    </div>
+               </div>
+
+        </section>
+
+        <!-- banner ============-->
+         <section class="shopping-banner">
+            <div class="shopping-banner-container">
+              <!-- text -->
+               <div class="shopping-banner-text">
+                   <strong>Collection</strong>
+                   <h3>Beatiful Coffee Beans</h3>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  deserunt obcaecati!</p>
+                   <a href="#">Shop Now </a>
+               </div>
+               <!-- img -->
+               <div class="shopping-banner-img">
+                <img src="banner-img.png" alt="banner">
+               </div>
+            </div>
+
+         </section>
+         
+         
+         <!-- recent-product -->
+         <section id="recent-product">
+              <h2>Recent Coffee Collection</h2>
+              
+              <!-- container =========-->
+              <div class="recenet-product-container">
+                 <!-- box1 -->
+                 <div class="product-box">
+                  <!-- img ===-->
+                   <a href="#" class="product-box-img">
+                     <img src="p7.png" alt="product"/>
+                     <span>New</span>
+                   </a>
+                   <!-- text -->
+                    <div class="product-box-text">
+                      <a href="#" class="product-text-title">Coffee Beans</a>
+                      <span>20$ <del>40$</del></span>
+                      <a href="" class="product-card-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-heart-fill" viewBox="0 0 16 16">
+                          <path d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
+                        </svg>
+                        Add To Card 
+                      </a>
+                    </div>
+               </div>
+
+               <!-- box2 -->
+               <div class="product-box">
+                <!-- img ===-->
+                 <a href="#" class="product-box-img">
+                   <img src="p8.png" alt="product"/>
+                   <span>New</span>
+                 </a>
+                 <!-- text -->
+                  <div class="product-box-text">
+                    <a href="#" class="product-text-title">Coffee Beans</a>
+                    <span>20$ <del>40$</del></span>
+                    <a href="" class="product-card-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-heart-fill" viewBox="0 0 16 16">
+                        <path d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
+                      </svg>
+                      Add To Card 
+                    </a>
+                  </div>
+             </div>
+
+             <!-- box3 -->
+             <div class="product-box">
+              <!-- img ===-->
+               <a href="#" class="product-box-img">
+                 <img src="p9.png" alt="product"/>
+                 <span>New</span>
+               </a>
+               <!-- text -->
+                <div class="product-box-text">
+                  <a href="#" class="product-text-title">Coffee Beans</a>
+                  <span>20$ <del>40$</del></span>
+                  <a href="" class="product-card-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-heart-fill" viewBox="0 0 16 16">
+                      <path d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
+                    </svg>
+                    Add To Card 
+                  </a>
+                </div>
+           </div>
+
+
+           <!-- box4 -->
+           <div class="product-box">
+            <!-- img ===-->
+             <a href="#" class="product-box-img">
+               <img src="p10.png" alt="product"/>
+               <span>New</span>
+             </a>
+             <!-- text -->
+              <div class="product-box-text">
+                <a href="#" class="product-text-title">Coffee Beans</a>
+                <span>20$ <del>40$</del></span>
+                <a href="" class="product-card-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-heart-fill" viewBox="0 0 16 16">
+                    <path d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
+                  </svg>
+                  Add To Card 
+                </a>
+              </div>
+         </div>
+
+         
+     
+
+              </div>
+
+         </section> 
+
+         
+         
+         <!-- partner logo========  -->
+         <section id="partner">
+          <img src="logo-1.png" alt="logo">
+          <img src="logo-2.png" alt="logo">
+          <img src="logo-3.png" alt="logo">
+          <img src="logo-4.png" alt="logo">
+       </section>
+  
+       <!-- recent-product -->
+       <section id="recent-product">
+        <h2>Recent Coffee Collection</h2>
+        
+        <!-- container =========-->
+        <div class="recenet-product-container">
+           <!-- box1 -->
+           <div class="product-box">
+            <!-- img ===-->
+             <a href="#" class="product-box-img">
+               <img src="pl1.webp" alt="product"/>
+               <span>New</span>
+             </a>
+             <!-- text -->
+              <div class="product-box-text">
+                <a href="#" class="product-text-title">Coffee Beans</a>
+                <span>20$ <del>40$</del></span>
+                <a href="" class="product-card-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-heart-fill" viewBox="0 0 16 16">
+                    <path d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
+                  </svg>
+                  Add To Card 
+                </a>
+              </div>
+         </div>
+
+         <!-- box2 -->
+         <div class="product-box">
+          <!-- img ===-->
+           <a href="#" class="product-box-img">
+             <img src="pl2.webp" alt="product"/>
+             <span>New</span>
+           </a>
+           <!-- text -->
+            <div class="product-box-text">
+              <a href="#" class="product-text-title">Coffee Beans</a>
+              <span>20$ <del>40$</del></span>
+              <a href="" class="product-card-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-heart-fill" viewBox="0 0 16 16">
+                  <path d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
+                </svg>
+                Add To Card 
+              </a>
+            </div>
+       </div>
+
+       <!-- box3 -->
+       <div class="product-box">
+        <!-- img ===-->
+         <a href="#" class="product-box-img">
+           <img src="pl3.webp" alt="product"/>
+           <span>New</span>
+         </a>
+         <!-- text -->
+          <div class="product-box-text">
+            <a href="#" class="product-text-title">Coffee Beans</a>
+            <span>20$ <del>40$</del></span>
+            <a href="" class="product-card-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-heart-fill" viewBox="0 0 16 16">
+                <path d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
+              </svg>
+              Add To Card 
+            </a>
+          </div>
+     </div>
+
+
+     <!-- box4 -->
+     <div class="product-box">
+      <!-- img ===-->
+       <a href="#" class="product-box-img">
+         <img src="pl4.webp" alt="product"/>
+         <span>New</span>
+       </a>
+       <!-- text -->
+        <div class="product-box-text">
+          <a href="#" class="product-text-title">Coffee Beans</a>
+          <span>20$ <del>40$</del></span>
+          <a href="" class="product-card-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-heart-fill" viewBox="0 0 16 16">
+              <path d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
+            </svg>
+            Add To Card 
+          </a>
+        </div>
+   </div>
+
+   
+
+
+        </div>
+
+   </section> 
+
+
+   <!-- download app ===============-->
+    <section id="download-app">
+      <!-- img -->
+       <div class="app-img">
+        <img src="mobile-app.jpg" alt="app">
+       </div>
+       <!-- text -->
+       <div class="download-app-text">
+         <strong>Download App </strong>
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum earum enim perferendis similique pariatur? Obcaecati in quos </p>
+         <!-- btns -->
+          <div class="download-btns">
+            <a href="#">
+              <img src="appstore-btn.png" alt="app store">
+            </a>
+            <a href="#">
+              <img src="googleplay-btn.png" alt="google play store">
+            </a>
+          </div>
+        </div>
+    </section>
+
+    <!-- blog================== -->
+
+    <section id="blog">
+      <!-- heading -->
+      <div class="blog-heading">
+       <h3>Recent News</h3>
+      </div>
+
+      <!-- container============ -->
+       <div class="blog-container">
+          <!-- box========== -->
+           <div class="blog-box">
+           <!-- img==== -->
+            <div class="blog-img">
+              <img src="blog-1.jpeg" alt="blog">
+            </div>
+            <!-- text===== -->
+             <div class="blog-text">
+              <span>10 July 2021 / Coffee</span>
+              <a href="#" class="blog-title">We Provide Best Coffee Ever </a>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos porro quae quis dignissimos deleniti ex ipsam, nisi fugiat, sed minus exercitationem facilis laudantium ullam aut? Ipsam ad a atque sit.</p>
+              <a href="#">Read More </a> 
+            </div>
+          </div>
+
+          <!-- box========== -->
+          <div class="blog-box">
+            <!-- img==== -->
+             <div class="blog-img">
+               <img src="blog-2.jpg" alt="blog">
+             </div>
+             <!-- text===== -->
+              <div class="blog-text">
+               <span>10 July 2021 / Coffee</span>
+               <a href="#" class="blog-title">We Provide Best Coffee Ever </a>
+               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos porro quae quis dignissimos deleniti ex ipsam, nisi fugiat, sed minus exercitationem facilis laudantium ullam aut? Ipsam ad a atque sit.</p>
+               <a href="#">Read More </a> 
+             </div>
+           </div>
+
+           <!-- box========== -->
+           <div class="blog-box">
+            <!-- img==== -->
+             <div class="blog-img">
+               <img src="blog-3.jpg" alt="blog">
+             </div>
+             <!-- text===== -->
+              <div class="blog-text">
+               <span>10 July 2021 / Coffee</span>
+               <a href="#" class="blog-title">We Provide Best Coffee Ever </a>
+               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos porro quae quis dignissimos deleniti ex ipsam, nisi fugiat, sed minus exercitationem facilis laudantium ullam aut? Ipsam ad a atque sit.</p>
+               <a href="#">Read More </a> 
+             </div>
+           </div>
+       </div>
+    </section>
+    
+
+    <!-- services========== -->
+     <section class="service">
+       <!-- box -->
+       <div class="service-box">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-truck" viewBox="0 0 16 16">
+          <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5zm1.294 7.456A2 2 0 0 1 4.732 11h5.536a2 2 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456M12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2"/>
+        </svg>
+        <span>Free Shipping </span>
+        <p>Free shipping for all orders </p>
+       </div> 
+
+        <!-- box -->
+        <div class="service-box">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-headset" viewBox="0 0 16 16">
+            <path d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5"/>
+          </svg>
+          <span>Support 24/7</span>
+          <p>Support 24h a day</p>
+         </div> 
+
+          <!-- box -->
+       <div class="service-box">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
+          <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41m-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9"/>
+          <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5 5 0 0 0 8 3M3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9z"/>
+        </svg>
+        <span>100% money Back</span>
+        <p>You ave 30 days to return</p>
+       </div> 
+
+
+     </section>
+
+
+<!-- footer =======================-->
+<footer>
+     <div class="footer-container">
+      <!-- ***comapny box****** -->
+       <div class="footer-campany-box">
+        <!-- logo -->
+        <a href="#" class="footer-logo">
+          <img src="logo.png" alt="logo">
+        </a>
+        <!-- details -->
+         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus laboriosam </p>
+          <!-- social media -->
+           <div class="footer-social">
+             <!-- facebook -->
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                </svg>
+              </a>
+
+              <!-- instagram -->
+               <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                </svg>
+               </a>
+
+               <!-- twitter -->
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+                  </svg>
+                </a>
+               
+                <!-- youtube -->
+                 <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                    <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                  </svg>
+                 </a>
+           </div>
+        </div>
+        <!-- ****links***** -->
+         <div class="footer-link-box">
+          <strong>Main Link's</strong>
+          <ul>
+            <li><a href="coffee.html">Home</a></li>
+            <li><a href="#shop.html">Shop</a></li>
+            <li><a href="#popular">Popular</a></li>
+            <li><a href="#blog">News</a></li>
+            <li><a href="#recent-product">Recent</a></li>
+          </ul>
+
+         </div>
+
+         <!-- ****links***** -->
+         <div class="footer-link-box">
+          <strong>Socail Link's</strong>
+          <ul>
+             <li><a href="#">facebook</a></li>
+             <li><a href="#">instagram</a></li>
+             <li><a href="#">Twitter</a></li>
+             <li><a href="#">youtube</a></li>
+             <!-- <li><a href="#">Collection</a></li> -->
+          </ul>
+
+        </div>
+        <!-- subscribe===== -->
+        <div class="footer-subscribe">
+             <strong>subscribe Now </strong>
+             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+             <form class="subscribe-box">
+                <input type="email" name="subscribe_email" placeholder="Example@gamil.com" required>
+                <button>subscribe</button>
+              </form>
+        </div>
+
+     </div>
+
+     <!-- bottom============ -->
+      <div class="footer-bottom">
+          <span>Made By coffee </span>
+          <span>@ copyright 2025</span>
+
+
+      </div>
+
+</footer>
+
+
+<!-- script======== -->
+    <!-- <script>
+    
+       document.addEventListener('DOMcontentloaded' , function(event){
+      //   search  ================//
+        document.addEventListener('click', function(event){
+          if(event.target.closest('.nav-search')){
+            document.querySelector('.search-bar').classList.add('search-bar-active');
+          }
+          else if(event.target.closest('.search-cancel')){
+            document.querySelector('.search-bar').classList.remove('search-bar-active');
+          }
+        });
+         
+        //  login and sigup==============//
+        document.addEventListener('click', function(event){
+           const formElement = document.querySelector('.form');
+          //check if the clicked element has the alss 'nav-user' or 'already-account'
+          if(event.target.closest('.nav-user' , 'already-accoutnt' )){
+              formElement.classList.add('login-active');
+              formElement.classList.remove('sign-up-active');
+          }
+
+          //check if the clicked element has the alss 'nav-user' or 'sign-up-btn'
+          if(event.target.closest('.sign-up-btn')){
+              formElement.classList.remove('login-active');
+              formElement.classList.add('sign-up-active');
+          }
+
+          //check if the clicked element has the alss 'nav-user' or 'sign-up-btn'
+          if(event.target.closest('.form-cancel')){
+              formElement.classList.remove('login-active');
+              formElement.classList.remove('sign-up-active');
+          }
+
+        });
+
+        // fixed Headers================//
+        const header = document.querySelector('header');
+        let lastScrollY = window.scrollY;
+
+        window.addEventListener('scroll', function(){
+            const currentScrollY = window.scrollY;
+
+            //check if it on top
+
+            if(currentScrollY === 0){
+              header.classList.remove('header-fix');
+            }
+            else if(currentScrollY < lastScrollY){
+              header.classList.add('header-fix');
+            }
+
+            else{
+              header.classList.remove('header-fix');
+            }
+
+            lastScrollY = currentScrollY;
+        });
+       });
+
+    </script> -->
+
+
+</body>
+</html>
